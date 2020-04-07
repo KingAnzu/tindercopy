@@ -1,0 +1,11 @@
+<ul id="slides">
+<% @user.each do |user| %>
+<li class="slide" data-id="<%= user.id  %>">
+  <%= user.username %>
+</li>
+  <% end %>
+
+</ul>
+
+<button class="controls" id="decline">No</button>
+<button class="controls" id="approve">Yes</button>
